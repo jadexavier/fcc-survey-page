@@ -8,15 +8,16 @@
     <title>Elden Ring Feedback Form</title>
 </head>
 <body>
+    <div class="center-frame">
     <h1 id="title">Elden Ring Community Feedback Form</h1>
-    <p id="description">Thank you for taking the time to offer feedback on your experience in the first few weeks of playing Elden Ring. We value feedback from 
-        all play styles and levels, and will take all into consideration.</p>
+    <p id="description">Thank you for taking the time to offer feedback on your experience in the first few weeks of playing Elden Ring.</p> 
+    <p id="description">We value feedback from all play styles and levels, and will take all into consideration.</p>
     <form id="survey-form">
         <fieldset>
-            <label id="name-label">Please enter your name:<input type="text" name="name" placeholder="Godrick" required/></label>
-            <label id="email-label">Please enter your email:<input type="email" name="email" placeholder="graftmaster69@erdmail.net" required/></label>
+            <label id="name-label">Please enter your name:<input id="name" type="text" name="name" placeholder="Godrick" required/></label>
+            <label id="email-label">Please enter your email:<input id="email" type="email" name="email" placeholder="graftmaster69@erdmail.net" required/></label>
             <label>Please enter your SteamID (optional):<input type="text" name="steamid" placeholder="L+Ratio+Maidenless"/></label>
-            <label id="number-label">Please enter your age:<input type="number" min="16" max="1000" name="age" placeholder="999" required/></label>
+            <label id="number-label">Please enter your age:<input id="number" type="number" min="16" max="1000" name="age" placeholder="999" required/></label>
         </fieldset>
         <fieldset>
             <label>How many FromSoftware games have you played before Elden Ring?
@@ -38,11 +39,11 @@
             </label>
             <label>On a scale of 1-10 how would you rate Elden Ring?<input type="number" min="1" max="10" name="rating" required></label>
             <label>On a scale of 1-10 how would you rate the difficulty of Elden Ring?<input type="number" min="1" max="10" name="difficulty" required></label>
-            <label>Of the new accessibility features offered, which have you used in game?
-                <input type="checkbox" value="spirit">Spirit Ashes
-                <input type="checkbox" value="npc">NPC Summons
-                <input type="checkbox" value="mount">Mounted Combat
-                <input type="checkbox" value="arts">Weapon Arts
+            <label style="word-wrap: break-word">Of the new accessibility features offered, which have you used in game?<br/>
+                <input class="input-block" type="checkbox" value="spirit">Spirit Ashes
+                <input class="input-block" type="checkbox" value="npc">NPC Summons
+                <input class="input-block" type="checkbox" value="mount">Mounted Combat
+                <input class="input-block" type="checkbox" value="arts">Weapon Arts
             </label>
             <label>Would you recommend Elden Ring to a friend?
                 <input type="radio" value="yes" name="recommend" checked>Yes
@@ -50,9 +51,10 @@
             </label>
         </fieldset>
         <fieldset>
-            <label>If you have any additional comments, please leave them here:<textarea name="comments" rows="3" cols="30" placeholder="game hard, head hurt"></textarea></label>
+            <label>If you have any additional comments, please leave them here:<textarea name="comments" rows="5" cols="50" placeholder="game hard, head hurt"></textarea></label>
         </fieldset>
         <input id="submit" type="submit">
     </form>
+</div>
 </body>
 </html>

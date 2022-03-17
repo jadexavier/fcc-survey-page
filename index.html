@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Elden Ring Feedback Form</title>
+</head>
+<body>
+    <h1 id="title">Elden Ring Community Feedback Form</h1>
+    <p id="description">Thank you for taking the time to offer feedback on your experience in the first few weeks of playing Elden Ring. We value feedback from 
+        all play styles and levels, and will take all into consideration.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Please enter your name:<input type="text" name="name" placeholder="Godrick" required/></label>
+            <label id="email-label">Please enter your email:<input type="email" name="email" placeholder="graftmaster69@erdmail.net" required/></label>
+            <label>Please enter your SteamID (optional):<input type="text" name="steamid" placeholder="L+Ratio+Maidenless"/></label>
+            <label id="number-label">Please enter your age:<input type="number" min="16" max="1000" name="age" placeholder="999" required/></label>
+        </fieldset>
+        <fieldset>
+            <label>How many FromSoftware games have you played before Elden Ring?
+                <select id="dropdown" name="games-played">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select>
+            </label>
+            <label>How would you describe your gaming habits in general?
+                <select id="dropdown" name="game-habits">
+                    <option value="casual">Casual</option>
+                    <option value="competetive">Competetive</option>
+                    <option value="hardcore">Hardcore</option>
+                    <option value="nolife">NoLife</option>
+                </select>
+            </label>
+            <label>On a scale of 1-10 how would you rate Elden Ring?<input type="number" min="1" max="10" name="rating" required></label>
+            <label>On a scale of 1-10 how would you rate the difficulty of Elden Ring?<input type="number" min="1" max="10" name="difficulty" required></label>
+            <label>Of the new accessibility features offered, which have you used in game?
+                <input type="checkbox" value="spirit">Spirit Ashes
+                <input type="checkbox" value="npc">NPC Summons
+                <input type="checkbox" value="mount">Mounted Combat
+                <input type="checkbox" value="arts">Weapon Arts
+            </label>
+            <label>Would you recommend Elden Ring to a friend?
+                <input type="radio" value="yes" name="recommend" checked>Yes
+                <input type="radio" value="no" name="recommend">No
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>If you have any additional comments, please leave them here:<textarea name="comments" rows="3" cols="30" placeholder="game hard, head hurt"></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit">
+    </form>
+</body>
+</html>
